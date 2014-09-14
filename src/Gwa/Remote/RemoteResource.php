@@ -1,5 +1,5 @@
 <?php
-namespace Gwa\Util;
+namespace Gwa\Remote;
 
 /**
  * @brief Loads a remote resource using curl.

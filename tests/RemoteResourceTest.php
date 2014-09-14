@@ -1,14 +1,14 @@
 <?php
-require_once __DIR__.'/../src/Gwa/Util/RemoteResource.php';
+require_once __DIR__.'/../src/Gwa/Remote/RemoteResource.php';
 
-use \Gwa\Util\RemoteResource;
+use \Gwa\Remote\RemoteResource;
 
 class RemoteResourceTest extends PHPUnit_Framework_TestCase
 {
     public function testConstruct()
     {
         $r = new RemoteResource('http://www.google.com');
-        $this->assertInstanceOf('\Gwa\Util\RemoteResource', $r);
+        $this->assertInstanceOf('\Gwa\Remote\RemoteResource', $r);
     }
 
     public function testFetch()
